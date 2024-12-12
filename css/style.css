@@ -1613,7 +1613,10 @@ select:focus-visible {
 .img-poster img {
   display: block;
 }
-
+.infor-wraper{
+  z-index: 1;
+  position: relative;
+}
 .poster-content {
   position: absolute;
   width: 100%;
@@ -1625,7 +1628,12 @@ select:focus-visible {
   text-align: center;
   color: #fff;
 }
-
+.img-about{
+  position: absolute;
+  top: -17%;
+  z-index: 10;
+  border-radius: 10px;
+}
 .slide-btn-next {
   position: absolute;
   right: -15px;
@@ -1975,4 +1983,32 @@ ul .btn-info-xemthem{
 }
 ul .btn-info-xemthem i{
   color: var(--maincolor);
+}
+
+.slogan{
+  border: solid 1px red;
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 5px;
+
+}
+.slogan p {
+  padding: 65px;
+  font-family: var(--fontB);
+  line-height: 24px;
+
+}
+
+.intro-info3 {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+
+.intro-info3 span {
+    padding: 20px;
+}
+
+.detail-lanhdao b {
+  text-transform: uppercase;
 }
