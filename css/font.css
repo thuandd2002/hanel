@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family:BaiJamjuree-B;
+    src: url('fonts/BaiJamjuree-Bold.ttf');
+    font-display: swap;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: BaiJamjuree;
+    src: url('fonts/BaiJamjuree-Medium.ttf');
+    font-display: swap;
+    font-weight: normal;
+    font-weight: normal;
+}
+
+
+/* @font-face {
+    font-family: Arial-M;
+    src: url('fonts/SVN-Arial\ 2.ttf');
+    font-display: swap;
+    font-weight: normal;
+    font-weight: normal;
+} */
+
+
