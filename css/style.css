@@ -1613,7 +1613,7 @@ select:focus-visible {
 .img-poster img {
   display: block;
 }
-.infor-wraper{
+.infor-wraper {
   z-index: 1;
   position: relative;
 }
@@ -1622,13 +1622,12 @@ select:focus-visible {
   width: 100%;
   max-width: 800px;
   height: auto;
-  left: 50%;
+  left: 43%;
   top: 50%;
   transform: translate(-50%, -70%);
-  text-align: center;
   color: #fff;
 }
-.img-about{
+.img-about {
   position: absolute;
   top: -17%;
   z-index: 10;
@@ -1665,6 +1664,10 @@ select:focus-visible {
 }
 
 /* home infor */
+
+.info-lanhdao, .history, .organizational {
+  background-color: #f6f6f6;
+}
 
 .creatdate {
   color: #8a8a8a;
@@ -1876,7 +1879,7 @@ select:focus-visible {
 }
 
 a.text-line-2 {
-  font-weight: var(--fontB);
+  font-weight: bold;
 }
 
 .flex-footer {
@@ -1969,46 +1972,194 @@ i.fa-solid.fa-arrow-right {
   align-items: center;
   justify-content: center;
 }
+.info-pride-wraper.gioi-thieu-all{
+  background-color: white;
+}
+.about-me.gioi-thieu-all{
+  background-color:#f7f7f7 ;
+}
+
 .about-me ul {
   display: flex;
   flex-wrap: wrap;
 }
-.about-me li{
+.about-me li {
   margin-top: 15px;
   width: 33%;
   list-style: none;
 }
-ul .btn-info-xemthem{
+ul .btn-info-xemthem {
   color: #000;
 }
-ul .btn-info-xemthem i{
+ul .btn-info-xemthem i {
   color: var(--maincolor);
 }
 
-.slogan{
+.slogan {
   border: solid 1px red;
   color: #fff;
   background-color: var(--maincolor);
   border-radius: 5px;
-
 }
 .slogan p {
   padding: 65px;
   font-family: var(--fontB);
   line-height: 24px;
-
 }
 
 .intro-info3 {
-    border: 1px solid;
-    border-radius: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 50px;
 }
 
 
-.intro-info3 span {
-    padding: 20px;
+.lanhdao img {
+  border-radius: 50%;
 }
-
 .detail-lanhdao b {
   text-transform: uppercase;
+}
+.poster-desc .text-line-3 {
+  width: 65%;
+}
+.homenews-wrapper .homecat-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homenews-wrapper .homecat-title .menu-tintuc ul {
+  display: flex;
+  font-size: 16px;
+  font-family: var(--fontmain);
+  list-style: none;
+  text-transform: none;
+  font-weight: 100;
+}
+
+.homenews-wrapper .homecat-title .menu-tintuc li {
+  margin: 0px 5px;
+  text-align: center;
+}
+
+.homenews-wrapper .homecat-title .menu-tintuc li::after {
+  content: " |";
+}
+.homenews-wrapper .homecat-title .menu-tintuc li:last-child:after {
+  content: " ";
+}
+.company-values .sub-title {
+  text-transform: uppercase;
+  font-family: var(--fontB);
+  font-size: x-large;
+}
+.sub-title.gioi-thieu-all{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: medium;
+}
+.company-values img {
+  border-radius: 50%;
+}
+.circle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Bo tròn ảnh */
+  z-index: 0;
+  position: relative;
+}
+
+.circle-container::before,
+.circle-container::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff0040; /* Màu viền */
+  border-radius: 50%;
+  top: -10px;
+  left: 33px;
+  width: 100%; /* Kích thước vòng tròn lớn hơn ảnh */
+  height: 100%;
+  z-index: 1;
+  transform: translate(-10px, -10px); /* Đặt vị trí */
+}
+
+.circle-container::after {
+  width: 100%; /* Kích thước vòng tròn lớn hơn ảnh */
+  height: 100%;
+  transform: translate(1px, 42px); /* Đặt vị trí */
+  opacity: 0.5; /* Độ mờ của viền */
+}
+
+.gioi-thieu-3{
+  position: relative;
+}
+.line-gioi-thieu{
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid rgb(0, 0, 0);
+  left: 50%;
+}
+.item-gioi-thieu{
+  position: relative;
+}
+.line-item-gioi-thieu{
+  position: absolute;
+  width: 10%;
+  border-top: 1px solid rgb(0, 0, 0);
+  z-index: 1;
+  left: 45%;
+  top: 10%;
+}
+.text-padding, .image-padding{
+  padding: 30px 35px;
+}
+
+.dot-red{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  left: 49.3%;
+  top: 8%;
+  z-index: 2;
+}
+.btn-gioi-thieu-3 a{
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  line-height: 40px;
+}
+.item-gioi-thieu2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.company-values.gioi-thieu2{
+  margin-top: -105px;
+}
+
+.item-lvhd{
+  background-color: #e2e2e238;
+  padding: 15px;
+}
+.item-icon{
+  font-size: xxx-large;
+
+}
+.item-lvhd:hover{
+  background-color: var(--maincolor);
+  color: rgb(255, 255, 255);
+}
+.item-icon:hover{
+  color: white;
 }
