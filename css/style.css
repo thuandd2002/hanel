@@ -1972,6 +1972,13 @@ i.fa-solid.fa-arrow-right {
   align-items: center;
   justify-content: center;
 }
+.info-pride-wraper.gioi-thieu-all{
+  background-color: white;
+}
+.about-me.gioi-thieu-all{
+  background-color:#f7f7f7 ;
+}
+
 .about-me ul {
   display: flex;
   flex-wrap: wrap;
@@ -2003,11 +2010,10 @@ ul .btn-info-xemthem i {
 .intro-info3 {
   border: 1px solid;
   border-radius: 10px;
+  padding: 50px;
 }
 
-.intro-info3 span {
-  padding: 20px;
-}
+
 .lanhdao img {
   border-radius: 50%;
 }
@@ -2048,6 +2054,11 @@ ul .btn-info-xemthem i {
   font-family: var(--fontB);
   font-size: x-large;
 }
+.sub-title.gioi-thieu-all{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: medium;
+}
 .company-values img {
   border-radius: 50%;
 }
@@ -2083,4 +2094,72 @@ ul .btn-info-xemthem i {
   height: 100%;
   transform: translate(1px, 42px); /* Đặt vị trí */
   opacity: 0.5; /* Độ mờ của viền */
+}
+
+.gioi-thieu-3{
+  position: relative;
+}
+.line-gioi-thieu{
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid rgb(0, 0, 0);
+  left: 50%;
+}
+.item-gioi-thieu{
+  position: relative;
+}
+.line-item-gioi-thieu{
+  position: absolute;
+  width: 10%;
+  border-top: 1px solid rgb(0, 0, 0);
+  z-index: 1;
+  left: 45%;
+  top: 10%;
+}
+.text-padding, .image-padding{
+  padding: 30px 35px;
+}
+
+.dot-red{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  left: 49.3%;
+  top: 8%;
+  z-index: 2;
+}
+.btn-gioi-thieu-3 a{
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  line-height: 40px;
+}
+.item-gioi-thieu2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.company-values.gioi-thieu2{
+  margin-top: -105px;
+}
+
+.item-lvhd{
+  background-color: #e2e2e238;
+  padding: 15px;
+}
+.item-icon{
+  font-size: xxx-large;
+
+}
+.item-lvhd:hover{
+  background-color: var(--maincolor);
+  color: rgb(255, 255, 255);
+}
+.item-icon:hover{
+  color: white;
 }
